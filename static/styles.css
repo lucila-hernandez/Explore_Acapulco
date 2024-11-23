@@ -8,3 +8,14 @@
     width: auto;  
     margin-right: 0.5rem; 
 }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black; /* Ensure the text color is set appropriately */
+}
+

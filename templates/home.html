@@ -1,19 +1,94 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="hero">
-    <h1>Acapulco Lindo</h1>
+<div class="hero d-flex flex-column justify-content-center align-items-center text-center">
+    <h1 class="display-3 fw-bold">Acapulco Lindo</h1>
+    <p class="lead mb-4">Discover the beauty and charm of Acapulco</p>
+    <a href="#newsletter" class="btn btn-light btn-lg shadow">Sign Up for Newsletter</a>
 </div>
-<div class="facts">
-    <h2>Interesting Facts about Acapulco</h2>
-    <!-- Add your content here -->
+
+<div class="why-visit py-5">
+    <h2 class="text-center mb-4">Why You Should Visit Acapulco</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Beautiful Beaches</h5>
+                        <p class="card-text">Acapulco boasts some of the most beautiful beaches in the world, perfect for sunbathing, swimming, and water sports.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Rich Culture</h5>
+                        <p class="card-text">Explore Acapulco’s rich cultural history through its museums, galleries, and historic sites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Vibrant Nightlife</h5>
+                        <p class="card-text">The city comes alive at night with numerous bars, clubs, and entertainment venues offering something for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Delicious Cuisine</h5>
+                        <p class="card-text">Indulge in Acapulco’s delicious cuisine, featuring fresh seafood, local specialties, and international dishes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="top-spots">
-    <h2>Top Rated Spots</h2>
-    <!-- Add your content here -->
+
+<div class="facts py-5">
+    <h2 class="text-center mb-4">Interesting Facts about Acapulco</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Fact 1</h5>
+                        <p class="card-text">Acapulco is known for its stunning beaches and vibrant nightlife.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Fact 2</h5>
+                        <p class="card-text">La Quebrada Cliff Divers are famous for their spectacular, high-risk dives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Fact 3</h5>
+                        <p class="card-text">Acapulco was a popular destination for Hollywood stars in the 1950s and 60s.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Fact 4</h5>
+                        <p class="card-text">The city has a rich history dating back to the 16th century, including the famous Fort of San Diego.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="newsletter">
-    <h2>Newsletter Sign Up</h2>
-    <!-- Add your sign-up form here -->
+
+<div class="newsletter py-5 text-center" id="newsletter">
+    <h2>Want to learn more? </h2>
+    <p class="lead mb-4">Stay updated with the latest news and offers from Acapulco!</p>
+    <button class="btn btn-primary btn-lg shadow">Join Newsletter</button>
 </div>
 {% endblock %}
-
