@@ -10,9 +10,13 @@ def home():
 def must_visit():
     return render_template('must_visit.html')
 
-@app.route('/dining')
-def dining():
-    return render_template('dining.html')
+@app.route('/food')
+def food():
+    return render_template('food.html')
+
+@app.route('/newsletter')
+def newsletter():
+    return render_template('newsletter.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5002)
