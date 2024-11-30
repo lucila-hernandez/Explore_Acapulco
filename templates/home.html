@@ -1,9 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="hero d-flex flex-column justify-content-center align-items-center text-center">
-    <h1 class="display-3 fw-bold">Acapulco Lindo</h1>
+    <h1 class="display-3 fw-bold">Acapulco, Mexico</h1>
     <p class="lead mb-4">Discover the beauty and charm of Acapulco</p>
-    <a href="#newsletter" class="btn btn-light btn-lg shadow">Sign Up for Newsletter</a>
+    <a href="{{ url_for('newsletter') }}" class="btn btn-light btn-lg shadow">Sign Up for Newsletter</a>
+</div>
+
+<div class="container-fluid my-4">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-12">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/rkk157Uaeq8" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="why-visit py-5">
@@ -50,34 +60,30 @@
     <h2 class="text-center mb-4">Interesting Facts about Acapulco</h2>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Fact 1</h5>
                         <p class="card-text">Acapulco is known for its stunning beaches and vibrant nightlife.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Fact 2</h5>
                         <p class="card-text">La Quebrada Cliff Divers are famous for their spectacular, high-risk dives.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Fact 3</h5>
                         <p class="card-text">Acapulco was a popular destination for Hollywood stars in the 1950s and 60s.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Fact 4</h5>
                         <p class="card-text">The city has a rich history dating back to the 16th century, including the famous Fort of San Diego.</p>
                     </div>
                 </div>
@@ -87,8 +93,8 @@
 </div>
 
 <div class="newsletter py-5 text-center" id="newsletter">
-    <h2>Want to learn more? </h2>
+    <h2>Want to learn more?</h2>
     <p class="lead mb-4">Stay updated with the latest news and offers from Acapulco!</p>
-    <button class="btn btn-primary btn-lg shadow">Join Newsletter</button>
+    <a href="{{ url_for('newsletter') }}" class="btn btn-primary btn-lg shadow">Join Newsletter</a>
 </div>
 {% endblock %}

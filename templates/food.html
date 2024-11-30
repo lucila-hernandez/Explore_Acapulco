@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Hero-like Header -->
+<div class="hero">
+    <h1 class="display-4 fw-bold">Dining in Acapulco</h1>
+</div>
+
+<!-- YouTube Video Section -->
+<div class="container-fluid my-4">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your_video_id" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Dining Sections -->
+<div class="dining-sections">
+    <!-- Fine Dining Carousel -->
+    <div class="dining py-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Fine Dining</h2>
+            <div id="fineDiningCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Fine Dining Option 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 1</h5>
+                            <p>Exquisite dining experience with gourmet dishes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Fine Dining Option 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 2</h5>
+                            <p>Elegant atmosphere with world-class cuisine.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Fine Dining Option 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 3</h5>
+                            <p>Delicious meals crafted by top chefs.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#fineDiningCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#fineDiningCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breakfast Carousel -->
+    <div class="breakfast py-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Breakfast</h2>
+            <div id="breakfastCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Breakfast Option 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 1</h5>
+                            <p>Start your day with a hearty breakfast.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Breakfast Option 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 2</h5>
+                            <p>Delicious morning treats and beverages.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Breakfast Option 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 3</h5>
+                            <p>A perfect way to kickstart your day.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#breakfastCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#breakfastCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snacks Carousel -->
+    <div class="snack py-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Snacks</h2>
+            <div id="snacksCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Snack Option 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 1</h5>
+                            <p>Quick and tasty snacks for any time of the day.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Snack Option 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 2</h5>
+                            <p>Perfect for a mid-day energy boost.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Snack Option 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Option 3</h5>
+                            <p>Delicious and satisfying treats.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#snacksCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#snacksCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
