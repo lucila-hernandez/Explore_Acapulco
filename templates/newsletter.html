@@ -1,23 +1,31 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container py-5">
+<div class="container py-5 text-right">
     <h2 class="text-center mb-4">Welcome to Acapulco – The Heart of the Pacific!</h2>
-    <p class="text-center">Discover the vibrant beauty, rich culture, and stunning landscapes of Acapulco, Mexico’s iconic beach destination. Nestled on the Pacific coast, Acapulco has long been a favorite retreat for those seeking sun, adventure, and unforgettable experiences.</p>
-    <p class="text-center">With its golden beaches, crystal-clear waters, and a blend of modern luxury and historical charm, Acapulco is the perfect place for travelers looking to unwind, explore, and create lasting memories. Whether you're here for the stunning cliff divers, the lively nightlife, or the local culture, Acapulco offers something for everyone.</p>
     <div class="row justify-content-center">
+        <div class="col-md-8">
+            <p class="text-right">Discover the vibrant beauty, rich culture, and stunning landscapes of Acapulco, Mexico’s iconic beach destination. Nestled on the Pacific coast, Acapulco has long been a favorite retreat for those seeking sun, adventure, and unforgettable experiences.</p>
+            <p class="text-right">With its golden beaches, crystal-clear waters, and a blend of modern luxury and historical charm, Acapulco is the perfect place for travelers looking to unwind, explore, and create lasting memories. Whether you're here for the stunning cliff divers, the lively nightlife, or the local culture, Acapulco offers something for everyone.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
         <div class="col-md-6">
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
+            <div class="form-container">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
 {% endblock %}
+
+
