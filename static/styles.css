@@ -1,3 +1,7 @@
+body {
+    background-color: #EDE7E3;
+} 
+
 .logo {
     height: 40px; 
     width: auto; 
@@ -9,18 +13,9 @@
     margin-right: 0.5rem; 
 }
 
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: black; 
-}
 .form-container {
     border: 2px solid #ccc;
-    border-radius: 15px;  /* Adds rounded corners */
+    border-radius: 15px;  
     padding: 60px;
     margin-top: 20px;
     background-color: #f9f9f9;
@@ -40,60 +35,113 @@
 }
 
 .card {
-    border-radius: 15px;  /* Adds rounded corners to the cards */
-    margin-bottom: 20px;  /* Adds bottom padding between cards */
+    border-radius: 15px;  
+    margin-bottom: 20px; 
 }
 
 .card-img-top {
-    border-radius: 15px 15px 0 0;  /* Ensures the image corners match the card's top corners */
-    height: 620px;        /* Ensures all images have the same height */
-    object-fit: cover;    /* Ensures images fit within the given height and width */
+    border-radius: 15px 15px 0 0;  
+    height: 620px;       
+    object-fit: cover;    
 }
 
 .card-body {
-    border-radius: 0 0 15px 15px;  /* Ensures the card body corners match the card's bottom corners */
+    border-radius: 0 0 15px 15px;  
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;  /* Ensures cards are evenly spaced */
+    justify-content: space-between;  
 }
 
 .card-wrapper {
     width: 100%;
-    margin-bottom: 15px;  /* Adds margin to separate cards */
+    margin-bottom: 15px; 
 }
 
 .food-card {
-    border-radius: 15px;  /* Adds rounded corners to the cards */
-    padding: 10px;        /* Adds padding inside each card */
-    margin-bottom: 20px;  /* Adds margin between the cards */
-    overflow: hidden;     /* Prevents content overflow */
+    border-radius: 15px;  
+    padding: 10px;        
+    margin-bottom: 20px;  
+    overflow: hidden;     
 }
 
 .food-card-img {
-    border-radius: 15px 15px 0 0;  /* Ensures the image corners match the card's top corners */
-    height: 200px;        /* Ensures all images have the same height */
-    object-fit: cover;    /* Ensures images fit within the given height and width */
-    width: 100%;          /* Ensures images take the full width of the card */
+    border-radius: 15px 15px 0 0;  
+    height: 200px;        
+    object-fit: cover;    
+    width: 100%;         
 }
 
 .food-carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);  /* Adds a semi-transparent background */
-    border-radius: 10px;                   /* Adds rounded corners to the caption */
-    padding: 10px;                         /* Adds padding inside the caption */
+    background-color: rgba(0, 0, 0, 0.5);  
+    border-radius: 10px;                  
+    padding: 10px;                         
 }
 
 .food-carousel-item {
     position: relative;
-    border-radius: 15px;  /* Ensures the entire carousel item has rounded corners */
-    overflow: hidden;     /* Prevents content overflow for the entire carousel item */
+    border-radius: 15px;  
+    overflow: hidden;    
 }
 
 .food-carousel-item img {
     width: 100%;
-    height: 700px;  /* Ensures all images in the carousel have the same height */
+    height: 700px;  
     object-fit: cover;
-    border-radius: 15px;  /* Adds rounded corners to the entire image */
+    border-radius: 15px;  
+}
+
+.navbar {
+    background-color: #489FB5 !important;  
+}
+
+.footer {
+    background-color: #82C0CC;  
+    padding: 20px 0;  
+    color: #000;  
+}
+
+.footer a {
+    color: #16697A;  
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}
+
+.home-hero {
+   /* width: 100%; */
+    height: 100vh;
+    background-image: url('/static/images/acapulco_hero.jpg');  
+    background-size: cover;   
+    background-position: center; 
+    background-attachment: fixed;
+    color: white;  
+}
+
+
+.food-hero {
+    /* width: 100vw; */
+    height: 100vh;
+    background-image: url('/static/images/food-hero.jpeg');  
+    background-size: cover;   
+    background-position: center; 
+    background-attachment: fixed;
+    color: white;
+}
+
+.must-visit-hero {
+    /* width: 100%;*/
+    height: 100vh;
+    background-image: url('/static/images/acapulco_must_visit.jpeg');  
+    background-size: cover;   
+    background-position: center; 
+    background-attachment: fixed;
+} 
+
+.must-visit-hero h1 {
+    color: white; 
 }
