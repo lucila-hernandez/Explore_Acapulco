@@ -3,17 +3,7 @@
 <div class="home-hero d-flex flex-column justify-content-center align-items-center text-center">
     <h1 class="display-3 fw-bold">Acapulco, Mexico</h1>
     <p class="lead mb-4">Discover the beauty and charm of Acapulco</p>
-    <a href="{{ url_for('newsletter') }}" class="btn btn-light btn-lg shadow">Sign Up for Newsletter</a>
-</div>
-
-<div class="container-fluid my-4">
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-12">
-            <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/rkk157Uaeq8" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
+    <a href="{{ url_for('newsletter') }}" class="btn btn-warning btn-lg shadow">Sign Up for Newsletter</a>
 </div>
 
 <div class="why-visit py-5">
@@ -92,9 +82,20 @@
     </div>
 </div>
 
+<div class="container-fluid my-4">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10"> 
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/rkk157Uaeq8" allowfullscreen style="max-width: 100%;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="newsletter py-5 text-center" id="newsletter">
     <h2>Want to learn more?</h2>
     <p class="lead mb-4">Stay updated with the latest news and offers from Acapulco!</p>
-    <a href="{{ url_for('newsletter') }}" class="btn btn-primary btn-lg shadow">Join Newsletter</a>
+    <a href="{{ url_for('newsletter') }}" class="btn btn-warning btn-lg shadow">Join Newsletter</a>
 </div>
+
 {% endblock %}

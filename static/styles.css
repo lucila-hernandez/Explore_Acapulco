@@ -24,6 +24,7 @@ body {
 .card {
     border-radius: 15px;  
     margin: 20px;
+    background-color: whitesmoke;
 }
 
 .card img {
@@ -104,7 +105,7 @@ body {
 }
 
 .footer a {
-    color: #16697A;  
+    color: #0B4F6C;  
     text-decoration: none; 
 }
 
@@ -144,4 +145,8 @@ body {
 
 .must-visit-hero h1 {
     color: white; 
+}
+
+.form-container{
+    background-color: whitesmoke;
 }
